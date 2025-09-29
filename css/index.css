@@ -1,0 +1,54 @@
+/* Name styling */
+h1.name {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  color: #C0737A;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 0.65; 
+}
+
+@media (max-width: 600px) {
+  h1.name {
+    font-size: 4rem;   /* smaller text on narrow devices */
+    line-height: 1.2;  /* keep consistent */
+  }
+}
+
+.logo-row {
+  align-items: center; /* vertical centering */
+}
+
+.headshot-img {
+  margin: 2rem auto 1rem auto;
+}
+
+.tagline {
+  text-align: center;
+  font-family: 'Playfair Display', serif; /* classy + contrasts with cursive */
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #a55a61;   /* slightly darker shade of your name’s pink */
+  margin-top: -0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px; /* adds a touch of polish */
+}
+
+
+
+/* Links */
+a {
+  color: #0072b1; /* linkedin blue */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:visited {
+  color: #0e577f;
+}
+
+a:hover {
+  color: #C0737A;
+  text-decoration: underline;
+}

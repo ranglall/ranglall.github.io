@@ -66,6 +66,10 @@ p.contact {
   margin-bottom: 1rem;
 }
 
+h3:subheader {
+    font-weight: bold;
+}
+
 /* Links */
 a {
   color: #7E8C69;
