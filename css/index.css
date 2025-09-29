@@ -3,7 +3,7 @@ h1.name {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
   color: #C0737A;
   text-align: center;
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
   line-height: 0.65; 
@@ -26,13 +26,12 @@ h1.name {
 
 .tagline {
   text-align: center;
-  font-family: 'Playfair Display', serif; /* classy + contrasts with cursive */
+  font-family: "Trebuchet MS", sans-serif; 
   font-style: italic;
   font-size: 1.4rem;
-  color: #a55a61;   /* slightly darker shade of your name’s pink */
+  color: #9C5A62;   
   margin-top: -0.5rem;
   margin-bottom: 1.5rem;
-  letter-spacing: 0.5px; /* adds a touch of polish */
 }
 
 

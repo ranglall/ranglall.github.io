@@ -1,30 +1,90 @@
-/* Mobile nav bar */
-.title-bar,
-.title-bar .menu-icon {
-  background-color: #9CAD8C ;
-}
-.title-bar .menu-icon::after {
-  background: #fff;
-  box-shadow: 0 0.4375rem 0 #fff, 0 0.875rem 0 #fff;
+/*funstuff.css*/
+
+/* Default heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  margin: 0.75rem 0;
+  line-height: 1.3;
+  color: #222;
 }
 
-/* Expanded nav bar */
-.top-bar,
-.top-bar .menu{
-  background-color: #9CAD8C ;
+/* Heading sizes */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: #C0737A;  
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Memory lane images */
+.memory-img {
+  margin: 0 auto; 
+}
+
+/* Captions under images */
+.caption {
+  font-size: 1rem;
+  color: #444;
+  margin: 0.5rem 0 1.5rem 0;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.grid-x {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+/* Videos */
+.video-wrapper {
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+.video-wrapper iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   border: 0;
-  box-shadow: none;
 }
 
-/* Links to other pages */
-.top-bar .menu a {
-  color: #fff;
-  font-weight: 700;
+.content p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Hover links */
-.top-bar .menu a:hover {
-  background-color: #7E8C69;
-  color: #fff ;
-  border-radius: 0.25rem;
+/* Responsive video wrapper */
+.video {
+  position: relative;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  max-width: 900px;   
+  margin: 0 auto 2rem auto; 
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
