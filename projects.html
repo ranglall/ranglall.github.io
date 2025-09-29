@@ -31,6 +31,132 @@
   </div>
 
   <!-- Main content -->
+  <div class="grid-container content">
+
+    <!-- Header row -->
+    <div class="grid-x grid-padding-x">
+      <div class="cell small-12">
+        <h1 class="name">Internship Projects</h1>
+      </div>
+    </div>
+
+    <!-- BSDF Project #1 -->
+    <div class="grid-x grid-padding-x project-block">
+    <!-- Text section -->
+    <div class="cell small-12 medium-8">
+        <h2 class="project">Translate and Optimize BSDF Modeling Code</h2>
+        <h3 class="company"><a href="https://www.3m.com/" target="_blank">Display Lab, 3M</a></h3>
+        <h3 class="subheader">Background</h3>
+        <ul>
+        <li>Customers selling displays are more inclined to buy 3M products if there is an efficient design method</li>
+        <li>The Virtual Sampling team is preparing optical modeling software to support diverse optical product designs, including BSDF models</li>
+        <li>Bidirectional Scattering Distribution Function (BSDF) captures light transmission and reflection from surfaces under all lighting conditions, addressing consumer unpredictability</li>
+        </ul>
+
+        <h3 class="subheader">Objectives</h3>
+        <ul>
+        <li>Refactor and optimize BSDF tracer code for better performance and memory efficiency</li>
+        <li>Enable compatibility between Fortran and C# for enhanced memory efficiency</li>
+        <li>Introduce code maintainability through restructuring and documentation</li>
+        <li>Incorporate testing and debugging functions</li>
+        </ul>
+
+        <h3 class="subheader">Challenges</h3>
+        <ul>
+        <li>Navigating a large, undocumented codebase with unfamiliar coding languages</li>
+        <li>Managing Fortran and C# interoperability</li>
+        <li>Absence of references for similar implementations</li>
+        </ul>
+    </div>
+
+    <!-- Image section -->
+    <div class="cell small-12 medium-4 text-center">
+        <a href="https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function" target="_blank">
+        <img src="media/bsdf.png" alt="BSDF Project" class="project-img">
+        </a>
+    </div>
+    </div>
+
+
+    <!-- Project #2 -->
+    <div class="grid-x grid-padding-x project-block">
+    <!-- Text section -->
+    <div class="cell small-12 medium-8">
+        <h2 class="project">Reduce Anti-Sparkle Using Machine Learning</h2>
+        <h3 class="company"><a href="https://www.3m.com/" target="_blank">Display Lab, 3M</a></h3>
+        <h3 class="subheader">Background</h3>
+        <ul>
+        <li>Customers use anti-glare due to consumer demand and its trendiness in advanced displays like OLEDs, though it may disrupt viewing comfort due to design</li>
+        <li>Anti-sparkle film enhances optical uniformity and clarity, supporting anti-glare in high-resolution devices</li>
+        </ul>
+
+        <h3 class="subheader">Objectives</h3>
+        <ul>
+        <li>Traditionally, the R&amp;D process faces trade-offs between uniformity and axial brightness, limiting design improvements</li>
+        <li>Use machine learning and possibly a TensorFlow Neural Network to optimize the balance between anti-sparkling and anti-glare, while minimizing the impact on other features</li>
+        </ul>
+
+        <h3 class="subheader">Challenges</h3>
+        <ul>
+        <li>Identifying the appropriate machine learning technique that is both new and successful</li>
+        <li>Develop the program to ensure usability and optimization with future data</li>
+        </ul>
+    </div>
+
+    <!-- Image section -->
+    <div class="cell small-12 medium-4 text-center">
+    <a href="https://www.researchgate.net/publication/355715468_Achievement_of_low_sparkle_in_anti-glare_spray_coatings_by_controlling_the_size_of_polymerized_species_in_silica_sols" 
+        target="_blank" rel="noopener noreferrer">
+        <img src="media/sparkle.png" alt="Anti-Sparkle Project" class="project-img">
+    </a>
+
+    <p class="project-caption">
+        <small>
+        Kajioka, Toshiyuki & Kanai, Toshimasa & Ikegami, Koji & Kozuka, Hiromitsu. (2021). 
+        Achievement of low sparkle in anti-glare spray coatings by controlling the size of polymerized species in silica sols. 
+        <i>Journal of Sol-Gel Science and Technology, 100</i>. 10.1007/s10971-021-05664-1.
+        </small>
+    </p>
+    </div>
+    </div>
+
+
+    <!-- Project #3 -->
+    <div class="grid-x grid-padding-x project-block">
+    <!-- Text section -->
+    <div class="cell small-12 medium-8">
+        <h2 class="project">Neural Network for User Stories</h2>
+        <h3 class="company"><a href="https://www.thecignagroup.com/" target="_blank">The Cigna Group</a></h3>
+        <h3 class="subheader">Background</h3>
+        <ul>
+        <li>Project managers often struggle to prioritize user stories in Scrum and Agile processes</li>
+        <li>Current methods are time-consuming and not always accurate</li>
+        </ul>
+
+        <h3 class="subheader">Objectives</h3>
+        <ul>
+        <li>Develop a Neural Network to prioritize a list of user stories uploaded from a Jira file</li>
+        <li>Train the model on historical Cigna user stories for improved accuracy</li>
+        <li>Integrate the model into a user-friendly website powered by AWS</li>
+        <li>Incorporate parameters such as description (word embedding), story points, time to complete, and type of story</li>
+        </ul>
+
+        <h3 class="subheader">Challenges</h3>
+        <ul>
+        <li>Fully integrating the system with AWS and enabling user input functionality</li>
+        <li>Allowing user to re-upload an adjusted Jira file back to their story board in Jira</li>
+        <li>Building and optimizing a Neural Network from scratch</li>
+        </ul>
+    </div>
+
+    <!-- Image section -->
+    <div class="cell small-12 medium-4 text-center">
+        <img src="media/user-stories.png" alt="User Stories Project" class="project-img">
+    </div>
+    </div>
+
+    </div>
+    </div>
 
 
     <!-- include before closing <body> tag -->
