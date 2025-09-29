@@ -1,0 +1,30 @@
+/* Mobile nav bar */
+.title-bar,
+.title-bar .menu-icon {
+  background-color: #9CAD8C ;
+}
+.title-bar .menu-icon::after {
+  background: #fff;
+  box-shadow: 0 0.4375rem 0 #fff, 0 0.875rem 0 #fff;
+}
+
+/* Expanded nav bar */
+.top-bar,
+.top-bar .menu{
+  background-color: #9CAD8C ;
+  border: 0;
+  box-shadow: none;
+}
+
+/* Links to other pages */
+.top-bar .menu a {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Hover links */
+.top-bar .menu a:hover {
+  background-color: #7E8C69;
+  color: #fff ;
+  border-radius: 0.25rem;
+}

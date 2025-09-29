@@ -1,0 +1,137 @@
+/* resume.css */
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  line-height: .5; /* smaller spacing between lines */
+
+}
+
+/* Default heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  margin: 0.75rem 0;
+  line-height: 1.3;
+}
+
+/* Heading sizes */
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.9rem;
+}
+
+/* Name styling */
+h1.name {
+  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  text-align: center;
+  font-size: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact info styling */
+p.contact {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* Section headers */
+.h2 {
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: #7E8C69;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:visited {
+  color: #5e664d;
+}
+
+a:hover {
+  color: #D16BA5;
+  text-decoration: underline;
+}
+
+/* Role and company spacing */
+.role {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.company {
+  margin-bottom: 0.25rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+td {
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+/* Make first column bold */
+td:first-child {
+  font-weight: bold;
+}
+
+/* Horizontal line separator between sections */
+.grid-x.grid-padding-x {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .75rem;
+  margin-bottom: .75rem;
+}
+
+.grid-x.grid-padding-x:last-of-type {
+  border-bottom: none; /* don’t add to last section */
+}
+
+/* Mobile-friendly spacing */
+@media (max-width: 640px) {
+  h1.name {
+    font-size: 2rem;
+  }
+
+  .h2 {
+    font-size: 1.3rem;
+  }
+
+  p.contact {
+    font-size: 0.9rem;
+  }
+}
+
+
