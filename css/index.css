@@ -11,13 +11,13 @@ h1.name {
 
 @media (max-width: 600px) {
   h1.name {
-    font-size: 4rem;   /* smaller text on narrow devices */
-    line-height: 1.2;  /* keep consistent */
+    font-size: 4rem;  
+    line-height: 1.2;  
   }
 }
 
 .logo-row {
-  align-items: center; /* vertical centering */
+  align-items: center; 
 }
 
 .headshot-img {

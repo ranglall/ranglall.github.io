@@ -121,10 +121,6 @@ td:first-child {
   margin-bottom: .75rem;
 }
 
-.grid-x.grid-padding-x:last-of-type {
-  border-bottom: none; /* don’t add to last section */
-}
-
 /* Mobile-friendly spacing */
 @media (max-width: 640px) {
   h1.name {
