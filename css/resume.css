@@ -41,6 +41,7 @@ h6 {
 /* Name styling */
 h1.name {
   font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+  color: #C0737A;
   text-align: center;
   font-size: 5rem;
   margin-top: 1rem;
@@ -59,6 +60,7 @@ p.contact {
   text-align: center;
   font-style: italic;
   font-weight: bold;
+  color: #C0737A;
   font-size: 1.6rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
@@ -76,7 +78,7 @@ a:visited {
 }
 
 a:hover {
-  color: #D16BA5;
+  color: #C0737A;
   text-decoration: underline;
 }
 
