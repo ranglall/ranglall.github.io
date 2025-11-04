@@ -1,12 +1,12 @@
 /* Name styling */
 h1.name {
-  font-family: "Brush Script MT", "Lucida Handwriting", cursive;
-  color: #C0737A;
+  font-family: 'Antonio', sans-serif;
   text-align: center;
-  font-size: 5.5rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  font-size: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   line-height: 0.65; 
+  font-weight: bold;
 }
 
 @media (max-width: 600px) {
@@ -26,12 +26,15 @@ h1.name {
 
 .tagline {
   text-align: center;
-  font-family: "Trebuchet MS", sans-serif; 
+  font-family: 'TT Bricks Trial', sans-serif;
   font-style: italic;
   font-size: 1.4rem;
-  color: #9C5A62;   
+  color: #ffbbea;   
   margin-top: -0.5rem;
   margin-bottom: 1.5rem;
+  font-style: italics;
+  background-color: #000001;
+  border-radius: 0.25rem;
 }
 
 

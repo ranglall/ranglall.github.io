@@ -1,30 +1,40 @@
 /* Mobile nav bar */
 .title-bar,
 .title-bar .menu-icon {
-  background-color: #9CAD8C ;
+  background-color: #000001;
 }
 .title-bar .menu-icon::after {
-  background: #fff;
-  box-shadow: 0 0.4375rem 0 #fff, 0 0.875rem 0 #fff;
+  background: #ffbbea;
+  box-shadow: 0 0.4375rem 0 #ffbbea, 0 0.875rem 0 #ffbbea, 0 0.875rem 0 #ffbbea;
 }
 
 /* Expanded nav bar */
 .top-bar,
 .top-bar .menu{
-  background-color: #9CAD8C ;
+  background-color: #000001;
   border: 0;
   box-shadow: none;
 }
 
+/* nav bar titles */
+.title-bar-title{
+   color: #ffbbea;
+}
+
+.top-bar .menu li.menu-text {
+  color: #ffffff;
+}
+
+
 /* Links to other pages */
 .top-bar .menu a {
-  color: #fff;
+  color: #ffbbea;
   font-weight: 700;
 }
 
 /* Hover links */
 .top-bar .menu a:hover {
-  background-color: #7E8C69;
-  color: #fff ;
+  background-color: #ffbbea;
+  color: #000001;
   border-radius: 0.25rem;
 }
