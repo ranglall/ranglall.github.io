@@ -135,7 +135,10 @@ a:hover {
   font-size: 1.15rem;
   margin-bottom: 0.25rem;
 }
-.card-copy { margin: 0; }
+.card-copy {
+  margin: 0;
+  font-style: italic;
+}
 .kpi-row { margin-top: 0.75rem; }
 .kpi-list {
   list-style: none; margin: 0; padding: 0;
@@ -168,3 +171,23 @@ a:hover {
 }
 .footer-btn.hollow:hover{background:#f9f9f9}
 
+.orgs-header {
+  padding: 2.25rem 0 0.75rem;
+  text-align: center;
+}
+
+.orgs-title {
+  font-family: "Antonio", sans-serif;
+  font-size: 2rem;
+  color: var(--pink);
+  margin-bottom: .35rem;
+  font-weight: 700;
+}
+
+.orgs-subtitle {
+  font-size: 1.05rem;
+  color: #555;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: .9;
+}
