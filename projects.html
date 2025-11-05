@@ -1,170 +1,293 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breanna Ranglall</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/projects.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
 
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/projects.css"/>
+  <meta name="description" content="Projects by Breanna Ranglall: ML, optical modeling, data products, research, and pragmatic UX."/>
+  <link href="https://fonts.googleapis.com/css?family=Antonio:400,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.cdnfonts.com/css/tt-bricks-trial?styles=152953" rel="stylesheet"/>
 </head>
 <body>
 
   <!-- Title bar (mobile only) -->
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <button class="menu-icon" type="button" data-toggle="responsive-menu" aria-label="Open Menu"></button>
     <div class="title-bar-title">Menu</div>
   </div>
 
-  <!-- Top Bar (desktop + expanded nav) -->
-  <div class="top-bar" id="responsive-menu">
+  <!-- Top Bar -->
+  <div class="top-bar" id="responsive-menu" role="navigation" aria-label="Main Navigation">
     <div class="top-bar-left">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="menu-text">Breanna Ranglall</li>
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="funstuff.html">Fun Stuff</a></li>
       </ul>
     </div>
   </div>
 
-  <!-- Main content -->
-  <div class="grid-container content">
+  <!-- Hero (black background) -->
+  <header class="proj-hero">
+    <div class="grid-container">
+      <h1 class="page-title">Projects</h1>
+      <p class="page-subtitle">
+        Selected projects across ML, optical modeling, data products, and more
+      </p>
+    </div>
+  </header>
 
-    <!-- Header row -->
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-12">
-        <h1 class="name">Internship Projects</h1>
+  <!-- Project Grid -->
+  <main class="grid-container">
+    <div class="grid-x grid-padding-x small-up-1 medium-up-2 large-up-3 row-gap">
+
+      <!-- 1) 3M — Anti-Sparkle Optimization with ML (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="/media/sparkle.png" alt="Display pixels demonstrating reduced sparkle"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Anti-Sparkle Optimization with ML</h2>
+            <p class="project-meta">3M Display Lab • Optical R&amp;D</p>
+            <p class="project-line"><span class="label">Objective:</span> Reduce sparkle while preserving anti-glare and brightness.</p>
+            <p class="project-line"><span class="label">How:</span> Optuna-tuned NN in TensorFlow to search film parameters and quantify trade-offs.</p>
+            <ul class="tech-tags">
+              <li>Python</li><li>ML</li><li>NN</li><li>Optuna</li><li>TensorFlow/Keras</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 2) 3M — BSDF Modeling Port & Tooling (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="/media/bsdf.png" alt="BSDF diagram representing optical scattering"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">BSDF Modeling Port &amp; Tooling</h2>
+            <p class="project-meta">3M Display Lab • Maplewood, MN</p>
+            <p class="project-line"><span class="label">Objective:</span> Modernize legacy BSDF modules for maintainable R&amp;D workflows.</p>
+            <p class="project-line"><span class="label">How:</span> Fortran→C# interop with structured tests and docs for virtual optics pipelines.</p>
+            <ul class="tech-tags">
+              <li>Fortran</li><li>C#</li><li>Interop</li><li>Optics</li><li>Testing</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 3) Cigna — Sprint Smart (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="/media/user-stories.png" alt="Backlog cards representing user stories"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">“Sprint Smart” ML Recommender</h2>
+            <p class="project-meta">The Cigna Group • TECDP</p>
+            <p class="project-line"><span class="label">Objective:</span> Prioritize user stories and improve effort estimation.</p>
+            <p class="project-line"><span class="label">How:</span> Embeddings + NN for ranking/points with a React UI and AWS integration.</p>
+            <ul class="tech-tags">
+              <li>Python</li><li>ML</li><li>NN</li><li>Embeddings</li><li>React</li><li>AWS</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4) Innovation Scholars — NASA (What) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&w=1200&q=60" alt="Spacecraft with Earth in background"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Innovation Scholars — Neuro Diagnostics</h2>
+            <p class="project-meta">MPCC • Partnered with NASA</p>
+            <p class="project-line"><span class="label">Objective:</span> Assess a NASA-derived concept for neurological diagnostics.</p>
+            <p class="project-line"><span class="label">What:</span> Clinical, regulatory, and market analysis with staged validation and risk mapping.</p>
+            <ul class="tech-tags">
+              <li>Research</li><li>Strategy</li><li>Healthcare</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 5) CognitionIQ (COBRA / VR) (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=1200&q=60" alt="VR headset with neural graphics"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">CognitionIQ — VR Cognitive Readiness</h2>
+            <p class="project-meta">Co-Founder &amp; CTO</p>
+            <p class="project-line"><span class="label">Objective:</span> Explore VR-based cognitive assessment leveraging NASA COBRA signals.</p>
+            <p class="project-line"><span class="label">How:</span> Prototype task design, signal exploration, and pilot scoping with advisors.</p>
+            <ul class="tech-tags">
+              <li>VR</li><li>Signals</li><li>Prototyping</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 6) Personal Website (What) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1520975682031-ae4f4c04f24f?auto=format&fit=crop&w=1200&q=60" alt="Minimal portfolio layout on a laptop"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Personal Website (Static + Foundation)</h2>
+            <p class="project-meta">Design • A11y • Performance</p>
+            <p class="project-line"><span class="label">Objective:</span> Present work clearly for recruiters and collaborators.</p>
+            <p class="project-line"><span class="label">What:</span> Foundation grid, semantic HTML, fast loads, and focused CTAs.</p>
+            <ul class="tech-tags">
+              <li>HTML</li><li>CSS</li><li>Foundation</li><li>A11y</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 7) Bird-Call Classifier (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1552083375-1447ce886485?auto=format&fit=crop&w=1200&q=60" alt="Bird perched with audio motif"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Bird-Call Audio Classifier</h2>
+            <p class="project-meta">Kaggle • PyTorch</p>
+            <p class="project-line"><span class="label">Objective:</span> Classify species from noisy field recordings.</p>
+            <p class="project-line"><span class="label">How:</span> Spectrogram transforms, CNN baselines, and augmentation for robustness.</p>
+            <ul class="tech-tags">
+              <li>PyTorch</li><li>CNN</li><li>Audio</li><li>Augmentation</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 8) Sustainability Games (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=60" alt="Abstract letter tiles for word games"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Sustainability Games — AI Guessers</h2>
+            <p class="project-meta">Python • GUI</p>
+            <p class="project-line"><span class="label">Objective:</span> Create learning games with adjustable difficulty.</p>
+            <p class="project-line"><span class="label">How:</span> Greedy, UCS, A*, and Minimax (Alpha-Beta) strategies decoupled from UI.</p>
+            <ul class="tech-tags">
+              <li>Python</li><li>Search</li><li>A*</li><li>Minimax</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 9) Climate & Yield Explorer (What) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1200&q=60" alt="Crop fields with chart motif"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Climate &amp; Yield Explorer</h2>
+            <p class="project-meta">CISC 375 • Web Dev</p>
+            <p class="project-line"><span class="label">Objective:</span> Make climate and crop yield trends understandable.</p>
+            <p class="project-line"><span class="label">What:</span> Static routes + responsive charts with clear narrative annotations.</p>
+            <ul class="tech-tags">
+              <li>HTML</li><li>CSS</li><li>JS</li><li>Charts</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 10) SQL Injection Demo (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=60" alt="Code editor for Python and SQL"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">SQL Injection: Unsafe vs. Safe</h2>
+            <p class="project-meta">SEIS 630 • Data Mgmt</p>
+            <p class="project-line"><span class="label">Objective:</span> Demonstrate secure DB access patterns.</p>
+            <p class="project-line"><span class="label">How:</span> Python + SQLite examples contrasting concat vs. parameterized queries.</p>
+            <ul class="tech-tags">
+              <li>Python</li><li>SQLite</li><li>Security</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 11) LCCC — Mental Health Data Insights (What) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=60" alt="Community meeting with dashboard concept"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">LCCC — Mental Health Data Insights</h2>
+            <p class="project-meta">Volunteer • Data Science</p>
+            <p class="project-line"><span class="label">Objective:</span> Support targeted mental-health programming.</p>
+            <p class="project-line"><span class="label">What:</span> Dashboards and outcome summaries for staff after data cleaning.</p>
+            <ul class="tech-tags">
+              <li>EDA</li><li>Dashboards</li><li>Data Viz</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <!-- 12) Pillsbury United Communities — Analytics (How) -->
+      <div class="cell">
+        <article class="card project-card">
+          <div class="project-media">
+            <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1200&q=60" alt="City neighborhood with community services signage"/>
+          </div>
+          <div class="card-section">
+            <h2 class="project-title">Pillsbury United Communities — Analytics</h2>
+            <p class="project-meta">Volunteer • Data Science</p>
+            <p class="project-line"><span class="label">Objective:</span> Reveal participation patterns to improve outreach.</p>
+            <p class="project-line"><span class="label">How:</span> Segment analysis and recommendations aligned to program capacity.</p>
+            <ul class="tech-tags">
+              <li>EDA</li><li>Segmentation</li><li>Dashboards</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer: LinkedIn + Email with icons -->
+  <footer class="site-footer">
+    <div class="grid-container text-center">
+      <p class="footer-line">Let’s innovate together.</p>
+      <div class="footer-cta">
+        <a class="button footer-btn" href="https://www.linkedin.com/in/ranglall" target="_blank" rel="noopener" aria-label="Open LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.47 4.73-2.47C22.4 7.73 24 10 24 13.7V24h-5v-8.7c0-2.08-.04-4.76-2.9-4.76-2.9 0-3.35 2.26-3.35 4.6V24H8z"/></svg>
+          LinkedIn
+        </a>
+        <a class="button footer-btn hollow" href="mailto:b@ranglall.com" aria-label="Send Email">
+          <!-- Email icon -->
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 13 2 6.76V18h20V6.76L12 13zm0-2 10-6H2l10 6z"/></svg>
+          Email
+        </a>
       </div>
     </div>
+  </footer>
 
-    <!-- BSDF Project #1 -->
-    <div class="grid-x grid-padding-x project-block">
-    <!-- Text section -->
-    <div class="cell small-12 medium-8">
-        <h2 class="project">Translate and Optimize BSDF Modeling Code</h2>
-        <h3 class="company"><a href="https://www.3m.com/" target="_blank">Display Lab, 3M</a></h3>
-        <h3 class="subheader">Background</h3>
-        <ul>
-        <li>Customers selling displays are more inclined to buy 3M products if there is an efficient design method</li>
-        <li>The Virtual Sampling team is preparing optical modeling software to support diverse optical product designs, including BSDF models</li>
-        <li>Bidirectional Scattering Distribution Function (BSDF) captures light transmission and reflection from surfaces under all lighting conditions, addressing consumer unpredictability</li>
-        </ul>
-
-        <h3 class="subheader">Objectives</h3>
-        <ul>
-        <li>Refactor and optimize BSDF tracer code for better performance and memory efficiency</li>
-        <li>Enable compatibility between Fortran and C# for enhanced memory efficiency</li>
-        <li>Introduce code maintainability through restructuring and documentation</li>
-        <li>Incorporate testing and debugging functions</li>
-        </ul>
-
-        <h3 class="subheader">Challenges</h3>
-        <ul>
-        <li>Navigating a large, undocumented codebase with unfamiliar coding languages</li>
-        <li>Managing Fortran and C# interoperability</li>
-        <li>Absence of references for similar implementations</li>
-        </ul>
-    </div>
-
-    <!-- Image section -->
-    <div class="cell small-12 medium-4 text-center">
-        <a href="https://en.wikipedia.org/wiki/Bidirectional_scattering_distribution_function" target="_blank">
-        <img src="media/bsdf.png" alt="BSDF Project" class="project-img">
-        </a>
-    </div>
-    </div>
-
-
-    <!-- Project #2 -->
-    <div class="grid-x grid-padding-x project-block">
-    <!-- Text section -->
-    <div class="cell small-12 medium-8">
-        <h2 class="project">Reduce Anti-Sparkle Using Machine Learning</h2>
-        <h3 class="company"><a href="https://www.3m.com/" target="_blank">Display Lab, 3M</a></h3>
-        <h3 class="subheader">Background</h3>
-        <ul>
-        <li>Customers use anti-glare due to consumer demand and its trendiness in advanced displays like OLEDs, though it may disrupt viewing comfort due to design</li>
-        <li>Anti-sparkle film enhances optical uniformity and clarity, supporting anti-glare in high-resolution devices</li>
-        </ul>
-
-        <h3 class="subheader">Objectives</h3>
-        <ul>
-        <li>Traditionally, the R&amp;D process faces trade-offs between uniformity and axial brightness, limiting design improvements</li>
-        <li>Use machine learning and possibly a TensorFlow Neural Network to optimize the balance between anti-sparkling and anti-glare, while minimizing the impact on other features</li>
-        </ul>
-
-        <h3 class="subheader">Challenges</h3>
-        <ul>
-        <li>Identifying the appropriate machine learning technique that is both new and successful</li>
-        <li>Develop the program to ensure usability and optimization with future data</li>
-        </ul>
-    </div>
-
-    <!-- Image section -->
-    <div class="cell small-12 medium-4 text-center">
-    <a href="https://www.researchgate.net/publication/355715468_Achievement_of_low_sparkle_in_anti-glare_spray_coatings_by_controlling_the_size_of_polymerized_species_in_silica_sols" 
-        target="_blank" rel="noopener noreferrer">
-        <img src="media/sparkle.png" alt="Anti-Sparkle vs. None" class="project-img">
-    </a>
-
-    <p class="project-caption">
-        <small>
-        Kajioka, Toshiyuki & Kanai, Toshimasa & Ikegami, Koji & Kozuka, Hiromitsu. (2021). 
-        Achievement of low sparkle in anti-glare spray coatings by controlling the size of polymerized species in silica sols. 
-        <i>Journal of Sol-Gel Science and Technology, 100</i>. 10.1007/s10971-021-05664-1.
-        </small>
-    </p>
-    </div>
-    </div>
-
-
-    <!-- Project #3 -->
-    <div class="grid-x grid-padding-x project-block">
-    <!-- Text section -->
-    <div class="cell small-12 medium-8">
-        <h2 class="project">"Sprint Smart" - Neural Network for User Stories</h2>
-        <h3 class="company"><a href="https://www.thecignagroup.com/" target="_blank">The Cigna Group</a></h3>
-        <h3 class="subheader">Background</h3>
-        <ul>
-        <li>Project managers often struggle to prioritize user stories in Scrum and Agile processes</li>
-        <li>Current methods are time-consuming and not always accurate</li>
-        </ul>
-
-        <h3 class="subheader">Objectives</h3>
-        <ul>
-        <li>Develop a Neural Network to prioritize a list of user stories uploaded from a Jira file</li>
-        <li>Train the model on historical Cigna user stories for improved accuracy</li>
-        <li>Integrate the model into a user-friendly website powered by AWS</li>
-        <li>Incorporate parameters such as description (word embedding), story points, time to complete, and type of story</li>
-        </ul>
-
-        <h3 class="subheader">Challenges</h3>
-        <ul>
-        <li>Fully integrating the system with AWS and enabling user input functionality</li>
-        <li>Allowing user to re-upload an adjusted Jira file back to their story board in Jira</li>
-        <li>Building and optimizing a Neural Network from scratch</li>
-        </ul>
-    </div>
-
-    <!-- Image section -->
-    <div class="cell small-12 medium-4 text-center">
-        <img src="media/user-stories.png" alt="User Stories Project" class="project-img">
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-
-    <!-- include before closing <body> tag -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script type="application/javascript">
-        $(document).foundation();
-    </script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script>$(document).foundation();</script>
 </body>
 </html>

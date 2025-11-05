@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Breanna Ranglall</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/index.css">
-  <link href='https://fonts.googleapis.com/css?family=Antonio' rel='stylesheet'>
-  <link href="https://fonts.cdnfonts.com/css/tt-bricks-trial?styles=152953" rel="stylesheet">
+
+  <!-- Foundation CSS -->
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/index.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Antonio:400,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.cdnfonts.com/css/tt-bricks-trial?styles=152953" rel="stylesheet"/>
+
+  <!-- Meta -->
+  <meta name="description" content="Breanna Ranglall — CS & Data Science, ML, software engineering. Open to full-time roles."/>
 </head>
 <body>
 
   <!-- Title bar (mobile only) -->
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <button class="menu-icon" type="button" data-toggle="responsive-menu" aria-label="Open Menu"></button>
     <div class="title-bar-title">Menu</div>
   </div>
 
   <!-- Top Bar (desktop + expanded nav) -->
-  <div class="top-bar" id="responsive-menu">
+  <div class="top-bar" id="responsive-menu" role="navigation" aria-label="Main Navigation">
     <div class="top-bar-left">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="menu-text">Breanna Ranglall</li>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="resume.html">Resume</a></li>
         <li><a href="funstuff.html">Fun Stuff</a></li>
@@ -31,81 +38,149 @@
     </div>
   </div>
 
-    <!-- Main content -->
-    <div class="grid-container content">
-
-    <!-- Picture + Info Section -->
-    <div class="grid-x grid-padding-x align-middle about-section">
-        <!-- Image -->
-        <div class="cell small-12 medium-4 text-center">
-        <img src="media/headshot.png" alt="Breanna Ranglall headshot" class="headshot-img">
+  <!-- Hero / Intro -->
+  <header class="hero">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell small-12 medium-5 text-center">
+          <img src="media/headshot.png" alt="Headshot of Breanna Ranglall" class="headshot-img hero-headshot"/>
         </div>
+        <div class="cell small-12 medium-7">
+          <div class="badge-row">
+            <span class="pill success">Open to Full-Time Roles</span>
+            <span class="pill">Graduating May 2026</span>
+          </div>
 
-        <!-- Name + Blurb -->
-        <div class="cell small-12 medium-8 text-center medium-text-left about-text">
-        <h1 class="name">Breanna Ranglall</h1>
-        <p class="tagline">"Driven by Data, Inspired by Innovation"</p>
-        <p>
-            Hi, I’m Breanna! I am a senior at the University of St. Thomas majoring in Computer Science
-            and Data Science, with minors in Spanish and Applied Statistics. I’m passionate about
-            technology and problem-solving, from building machine learning models to mentoring peers.
-            On campus, I serve as President of the Computer Science Club and Vice President of the
-            Data Science & Analytics Club, where I love bringing students together to share knowledge
-            and grow as a community.
+          <h1 class="name">Breanna Ranglall</h1>
+          <p class="tagline">Driven by Data, Inspired by Innovation</p>
+
+          <p class="lead blurb">
+            Senior at the University of St. Thomas studying Computer Science &amp; Data Science with minors in
+            Spanish and Applied Statistics. I build useful things with ML, clean data, and thoughtful design—
+            and I love bringing teams together to ship.
+          </p>
+
+          <div class="cta-row">
+
+            <a class="button primary" href="Resume - Breanna Ranglall.pdf" target="_blank" rel="noopener">View Résumé</a>
+            <a class="button secondary" href="mailto:b@ranglall.com">Email Me</a>
+            <a class="button hollow" href="https://www.linkedin.com/in/ranglall" target="_blank" rel="noopener">Linkedin</a>
+          </div>
         </div>
+      </div>
     </div>
+  </header>
 
-    <br>
+  <!-- Highlights -->
+  <section class="highlights">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x small-up-1 medium-up-3">
+        <div class="cell">
+          <div class="card card-lite">
+            <div class="card-section">
+              <h3 class="card-title">R&amp;D Intern @ 3M</h3>
+              <p class="card-copy">
+                Built an Optuna-tuned Neural Network to speed anti-sparkle film design; translated legacy
+                Fortran to C# to enable virtual physics modeling.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card card-lite">
+            <div class="card-section">
+              <h3 class="card-title">Innovation Scholar - NASA Partner</h3>
+              <p class="card-copy">
+                Interdisciplinary research on neurological diagnostics with commercialization recommendations
+                across biomedical and business perspectives.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="card card-lite">
+            <div class="card-section">
+              <h3 class="card-title">SWE Intern @ Cigna</h3>
+              <p class="card-copy">
+                Deployed ML-based recommendation &amp; story-point prediction with TensorFlow/Keras and GPT;
+                React + AWS integration; microservice migration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Logo Row -->
-    <div class="grid-x grid-padding-x align-center text-center logo-row">
-    <div class="cell small-4 medium-2">
-        <a href="https://www.3m.com" target="_blank" >
-        <img src="media/3M.png" alt="3M Logo" class="logo-img">
-        </a>
+      <div class="grid-x grid-padding-x align-center text-center kpi-row">
+        <div class="cell small-12 medium-10">
+          <ul class="kpi-list">
+            <li><strong>Leadership:</strong> CS Club President,  DSA Club VP, RA</li>
+            <li><strong>Toolkit:</strong> Java, Python, R, SQL, JS/React, AWS, ML/NN</li>
+            <li><strong>Focus:</strong> ML systems, data products, usable software</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="cell small-4 medium-2">
-        <a href="https://www.cigna.com" target="_blank" >
-        <img src="media/Cigna.png" alt="Cigna Logo" class="logo-img">
-        </a>
-    </div>
-    <div class="cell small-4 medium-2">
-        <a href="https://www.mnprivatecolleges.org" target="_blank" >
-        <img src="media/mpcc.png" alt="MPCC Logo" class="logo-img">
-        </a>
-    </div>
-    <div class="cell small-6 medium-2">
-        <a href="https://news.stthomas.edu/innovation-scholars-present-research-to-nasa/" target="_blank" >
-        <img src="media/nasa.png" alt="NASA Logo" class="logo-img">
-        </a>
-    </div>
-    <div class="cell small-6 medium-2">
-        <a href="https://www.stthomas.edu" target="_blank" >
-        <img src="media/ust.png" alt="University of St. Thomas Logo" class="logo-img">
-        </a>
-    </div>
-</div>
-    
-    <br>
-    <br>
-    
-    <!-- Footer LinkedIn -->
-    <div class="footer-linkedin text-center">
-    <a href="https://www.linkedin.com/in/ranglall" target="_blank"  class="linkedin-footer">
-        <img src="media/linkedin.png" alt="LinkedIn Logo" class="linkedin-logo">
-        <span>Connect with me!</span>
-    </a>
-    </div>
+  </section>
 
+  <!-- Logos -->
+  <section class="logo-strip">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x align-center text-center logo-row">
+        <div class="cell small-4 medium-2">
+          <a href="https://www.3m.com" target="_blank" rel="noopener">
+            <img src="media/3M.png" alt="3M logo" class="logo-img grayscale"/>
+          </a>
+        </div>
+        <div class="cell small-4 medium-2">
+          <a href="https://www.cigna.com" target="_blank" rel="noopener">
+            <img src="media/Cigna.png" alt="Cigna logo" class="logo-img grayscale"/>
+          </a>
+        </div>
+        <div class="cell small-4 medium-2">
+          <a href="https://www.mnprivatecolleges.org" target="_blank" rel="noopener">
+            <img src="media/mpcc.png" alt="MPCC logo" class="logo-img grayscale"/>
+          </a>
+        </div>
+        <div class="cell small-6 medium-2">
+          <a href="https://news.stthomas.edu/innovation-scholars-present-research-to-nasa/" target="_blank" rel="noopener">
+            <img src="media/nasa.png" alt="NASA logo" class="logo-img grayscale"/>
+          </a>
+        </div>
+        <div class="cell small-6 medium-2">
+          <a href="https://www.stthomas.edu" target="_blank" rel="noopener">
+            <img src="media/ust.png" alt="University of St. Thomas logo" class="logo-img grayscale"/>
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Footer: LinkedIn + Email with icons -->
+  <footer class="site-footer">
+    <div class="grid-container text-center">
+      <p class="footer-line">Let’s innovate together.</p>
+      <div class="footer-cta">
+        <a class="button footer-btn" href="https://www.linkedin.com/in/ranglall" target="_blank" rel="noopener" aria-label="Open LinkedIn">
+          <!-- LinkedIn icon -->
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.47 4.73-2.47C22.4 7.73 24 10 24 13.7V24h-5v-8.7c0-2.08-.04-4.76-2.9-4.76-2.9 0-3.35 2.26-3.35 4.6V24H8z"/></svg>
+          LinkedIn
+        </a>
+        <a class="button footer-btn hollow" href="mailto:b@ranglall.com" aria-label="Send Email">
+          <!-- Email icon -->
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 13 2 6.76V18h20V6.76L12 13zm0-2 10-6H2l10 6z"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+  </footer>
 
 
-    <!-- include before closing <body> tag -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script type="application/javascript">
-        $(document).foundation();
-    </script>
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>

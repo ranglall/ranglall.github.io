@@ -1,246 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <location-date charset="utf-8">
-  <location-date name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Breanna Ranglall</title>
-  <link rel="stylesheet" href="css/foundation.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/resume.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume — Breanna Ranglall</title>
+
+  <!-- Foundation + Custom CSS -->
+  <link rel="stylesheet" href="css/foundation.css"/>
+  <link rel="stylesheet" href="css/navbar.css"/>
+  <link rel="stylesheet" href="css/resume.css"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Antonio:400,700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.cdnfonts.com/css/tt-bricks-trial?styles=152953" rel="stylesheet"/>
 </head>
 <body>
 
   <!-- Title bar (mobile only) -->
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <button class="menu-icon" type="button" data-toggle="responsive-menu" aria-label="Open Menu"></button>
     <div class="title-bar-title">Menu</div>
   </div>
 
-  <!-- Top Bar (desktop + expanded nav) -->
-  <div class="top-bar" id="responsive-menu">
+  <!-- Top Bar -->
+  <div class="top-bar" id="responsive-menu" role="navigation" aria-label="Main Navigation">
     <div class="top-bar-left">
       <ul class="dropdown menu" data-dropdown-menu>
         <li class="menu-text">Breanna Ranglall</li>
         <li><a href="index.html">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="resume.html" aria-current="page">Resume</a></li>
         <li><a href="funstuff.html">Fun Stuff</a></li>
       </ul>
     </div>
   </div>
 
-  <!-- Main content -->
-  <div class="grid-container content">
+  <!-- Header -->
+  <header class="resume-hero">
+    <div class="grid-container text-center">
+      <h1 class="resume-title">Resume</h1>
+      <p class="resume-subtitle">Experience, research, and leadership in software, data, and innovation</p>
+      <a class="button primary resume-btn" href="Resume - Breanna Ranglall.pdf" target="_blank" rel="noopener">View Full PDF</a>
+    </div>
+  </header>
 
-    <!-- Header row -->
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-12">
-        <h1 class="name">Breanna Ranglall</h1>
-      </div>
-      <div class="cell small-12">
-        <p class="contact">
-          ranglallbreanna@gmail.com ✦ St. Paul, MN ✦ 952-457-5722 ✦ <a href="https://www.linkedin.com/in/ranglall/" target="_blank">linkedin.com/in/ranglall</a>
-        </p>
+  <!-- Embedded PDF -->
+  <main class="grid-container resume-body">
+    <div class="grid-x grid-padding-x align-center">
+      <div class="cell small-12 medium-10">
+        <div class="pdf-frame">
+          <iframe src="Resume - Breanna Ranglall.pdf" width="100%" height="900px" style="border:1px solid #ccc;"></iframe>
+        </div>
       </div>
     </div>
+  </main>
 
-    <!-- Internship & Research Experience -->
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-12">
-        <h2 class="h2">Internship &amp; Research</h2>
-
-        <h3 class="role">R&amp;D Intern</h3>
-        <h4 class="company"><a href="https://www.3m.com/" target="_blank">Display Lab, 3M</a></h4>
-        <p class="location-date">Maplewood, MN ✦ May 2025 – Aug 2025</p>
-        <ul>
-          <li>Won first place in all three categories of the Innovation Challenge by presenting a team-developed product.</li>
-          <li>Created a Neural Network optimized with Optuna to accelerate the design process of anti-sparkle optical film. </li>
-          <li>Enabled virtual physics modeling for customers by converting legacy Fortran to C#, while improving memory. </li>
-        </ul>
-
-        <br>
-        <h3 class="role">Innovation Research Scholar</h3>
-        <h4 class="company"><a href="https://www.mnprivatecolleges.org/" target="_blank">Minnesota Private College Council</a> partnered with <a href="https://www.nasa.gov/" target="_blank">NASA</a></h4>
-        <p class="location-date">St. Paul, MN ✦ Oct 2024 – Feb 2025</p>
-        <ul>
-          <li>Researched and analyzed a NASA biomedical interdisciplinary project on neurological disease diagnosis.</li>
-          <li>Provided actionable recommendations for commercialization pathways in the healthcare sector, integrating 
-insights from biomedical, healthcare, and business perspectives with a diverse team. </li>
-        </ul>
-
-        <br>
-        <h3 class="role">Software Engineer Intern (TECDP)</h3>
-        <h4 class="company"><a href="https://www.thecignagroup.com/" target="_blank">The Cigna Group</a></h4>
-        <p class="location-date">Bloomington, MN ✦ May 2024 – Aug 2024</p>
-        <ul>
-          <li>Developed and deployed a machine-learning based recommendation system and ‘story-point predictor’ using a 
-Neural Network (TensorFlow/Keras) and GPT from OpenAI, integrated with React.js and AWS.</li>
-          <li>Migrated Java microservices from PCF to OpenShift, collaborating through pair programming.</li>
-          <li>Contributed to Agile ceremonies, including debugging, pull requests, and code reviews as a frontend developer.</li>
-        </ul>
-
-        <br>
-        <h3 class="role">Senior Service Desk &amp; Desktop Support Intern></h3>
-        <h4 class="company"><a href="https://www.stthomas.edu/its/" target="_blank">ITS, University of St. Thomas</a></h4>
-        <p class="location-date">St. Paul, MN ✦ May 2023 – Sept 2023</p>
-        <ul>
-          <li>Facilitated smooth rollout, reimaging, data transfers and replacements of 250+ Windows and Apple devices.</li>
-          <li>Exhibited responsible use of administrative rights, including installations, ensuring security and system integrity.</li>
-        </ul>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="grid-container text-center">
+      <p class="footer-line">Let’s innovate together.</p>
+      <div class="footer-cta">
+        <a class="button footer-btn" href="https://www.linkedin.com/in/ranglall" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0zM8 8h4.8v2.2h.07c.67-1.2 2.3-2.47 4.73-2.47C22.4 7.73 24 10 24 13.7V24h-5v-8.7c0-2.08-.04-4.76-2.9-4.76-2.9 0-3.35 2.26-3.35 4.6V24H8z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a class="button footer-btn hollow" href="mailto:b@ranglall.com" aria-label="Email">
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M12 13 2 6.76V18h20V6.76L12 13zm0-2 10-6H2l10 6z"/>
+          </svg>
+          Email
+        </a>
       </div>
     </div>
+  </footer>
 
-    <!-- Work Experience -->
-    <div class="grid-x grid-padding-x">
-      <div class="cell small-12">
-        <h2 class="h2">Work Experience</h2>
-
-        <h3 class="role">Resident Advisor</h3>
-        <h4 class="company"><a href="https://www.stthomas.edu/residencelife/" target="_blank">Residence Life, University of St. Thomas</a></h4>
-        <p class="location-date">St. Paul, MN ✦ Aug 2024 – Present</p>
-        <ul>
-          <li>Trained in conflict resolution techniques to mediate resident disputes and foster a positive community.</li>
-          <li>Apply active listening and problem-solving skills to address challenges among my 34 first-year residents.</li>
-        </ul>
-
-        <br>
-        <h3 class="role">Service Desk Technical Support Specialist</h3>
-        <h4 class="company"><a href="https://www.stthomas.edu/its/" target="_blank">ITS, University of St. Thomas</a></h4>
-        <p class="location-date">St. Paul, MN ✦ July 2022 – Present</p>
-        <ul>
-          <li>Create, organize, and manage 200+ tickets a month with effective problem solving and customer satisfaction.</li>
-          <li>Train and mentor new employees to be comfortable with software and handling client problems.</li>
-          <li>Respond adequately to phone calls, emails, and in-person inquiries to clients of varying age and technical expertise.</li>
-        </ul>
-
-        <br>
-        <h3 class="role">Computer Science Grader</h3>
-        <h4 class="company"><a href="https://www.stthomas.edu/" target="_blank">CISC Department, University of St. Thomas</a></h4>
-        <p class="location-date">St. Paul, MN ✦ Jan 2023 – May 2025</p>
-        <ul>
-          <li>Develop rubrics and grade 300 Java coding labs per semester through effective written feedback techniques.</li>
-          <li>Demonstrate keen eye for identifying logical, code documentation, and code efficiency errors.</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Certifications -->
-    <div class="grid-x grid-padding-x">
-    <div class="cell small-12">
-    <h2 class="h2">Certifications</h2>
-    <table class="unstriped stack">
-      <tbody>
-        <tr>
-          <td>Data Foundations</td>
-          <td><a href="https://www.badgr.com/" target="_blank" >Canvas Credentials (Badger)</a></td>
-          <td>April 2024</td>
-        </tr>
-        <tr>
-          <td>Career Essentials in Software Development</td>
-          <td><a href="https://www.microsoft.com/" target="_blank" >Microsoft</a></td>
-          <td>January 2024</td>
-        </tr>
-        <tr>
-          <td>Digital Accessibility Basics</td>
-          <td><a href="https://www.badgr.com/" target="_blank" >Canvas Credentials (Badger)</a></td>
-          <td>January 2024</td>
-        </tr>
-        <tr>
-          <td>Innovation and Technology Services (ITS) Essentials</td>
-          <td><a href="https://www.badgr.com/" target="_blank" >Canvas Credentials (Badger)</a></td>
-          <td>July 2022</td>
-        </tr>
-        <tr>
-          <td>Student Employment Essentials</td>
-          <td><a href="https://www.badgr.com/" target="_blank" >Canvas Credentials (Badger)</a></td>
-          <td>July 2022</td>
-        </tr>
-        <tr>
-          <td>Minnesota Spanish Gold Bilingual Seal</td>
-          <td><a href="https://education.mn.gov/" target="_blank" >Minnesota Department of Education</a></td>
-          <td>June 2022</td>
-        </tr>
-        <tr>
-          <td>Cybersecurity Foundation</td>
-          <td><a href="https://www.paloaltonetworks.com/academy" target="_blank" >Palo Alto Networks Academy</a></td>
-          <td>May 2022</td>
-        </tr>
-        <tr>
-          <td>Network Security Fundamentals</td>
-          <td><a href="https://www.paloaltonetworks.com/academy" target="_blank" >Palo Alto Networks Academy</a></td>
-          <td>March 2022</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-
-<!-- Awards & Scholarships -->
-<div class="grid-x grid-padding-x">
-  <div class="cell small-12">
-    <h2 class="h2">Awards & Scholarships</h2>
-    <table class="unstriped stack">
-      <tbody>
-        <tr>
-          <td>Dean’s Honor List</td>
-          <td><a href="https://www.stthomas.edu/" target="_blank" >University of St. Thomas</a></td>
-          <td>June 2024, January 2025</td>
-        </tr>
-        <tr>
-          <td>STEM Career Trek Selected Participant to San Francisco</td>
-          <td><a href="https://www.stthomas.edu/" target="_blank" >University of St. Thomas</a></td>
-          <td>March 2024</td>
-        </tr>
-        <tr>
-          <td>Arlene Robinson Memorial Scholarship</td>
-          <td><a href="https://www.stthomas.edu/its/" target="_blank" >ITS, University of St. Thomas</a></td>
-          <td>March 2023</td>
-        </tr>
-        <tr>
-          <td>Science Engineering & Mathematics Scholarship</td>
-          <td><a href="https://www.stthomas.edu/" target="_blank" >University of St. Thomas</a></td>
-          <td>July 2022</td>
-        </tr>
-        <tr>
-          <td>Reaching Excellence in Academic Leadership (REAL) Scholarship</td>
-          <td><a href="https://www.stthomas.edu/" target="_blank" >University of St. Thomas</a></td>
-          <td>May 2022</td>
-        </tr>
-        <tr>
-          <td>STEM Scholar</td>
-          <td><a href="https://evhs.district196.org/" target="_blank" >Eastview High School</a></td>
-          <td>May 2022</td>
-        </tr>
-        <tr>
-          <td>Multilingual Scholar with Distinction</td>
-          <td><a href="https://evhs.district196.org/" target="_blank" >Eastview High School</a></td>
-          <td>May 2022</td>
-        </tr>
-        <tr>
-          <td>President’s Education Award</td>
-          <td><a href="https://evhs.district196.org/" target="_blank" >Eastview High School</a></td>
-          <td>May 2022</td>
-        </tr>
-        <tr>
-          <td>Advanced Placement Scholar with Distinction</td>
-          <td><a href="https://ap.collegeboard.org/" target="_blank" >The College Board</a></td>
-          <td>May 2022</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-</div>
-
-
-    <!-- include before closing <body> tag -->
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script type="application/javascript">
-        $(document).foundation();
-    </script>
+  <!-- Scripts -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script>$(document).foundation();</script>
 </body>
 </html>
