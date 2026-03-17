@@ -36,7 +36,7 @@ h1.name {
 
 .tagline {
   text-align: center;
-  font-family: 'TT Bricks Trial', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-style: italic;
   font-size: 1.4rem;
   color: #ffbbea;   
@@ -78,7 +78,7 @@ a:hover {
   text-align: left;
 }
 .hero .tagline {
-  font-family: 'TT Bricks Trial', sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
   font-size: 1.35rem;
   color: #ffbbea;
   display: inline-block;
